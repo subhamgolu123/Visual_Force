@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.rooted{
+    width: 100%;
+}
+.nvGca{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom right, #4682b4, #7aaacf);
+    /* background-color: #45759c; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.leftPart{
+    width: 49%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.middelPart{
+    width: 5px;
+    height: 100%;
+    /* border-left: 5px solid lightblue; */
+    background: repeating-linear-gradient(
+        -40deg,
+        lightblue,
+        white 12px,
+        /* transparent 10px, */
+        transparent 23px
+    );
+}
+.rightPart{
+    width: 49%;
+    height: 100%;
+}
+.nvGcb{
+    width: 100%;
+    height: 105vh;
+    background-color: azure;
+    display: flex;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.inputs{
+    /* color: azure; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputs input{
+    max-width: 35% !important;
+    color: white !important;
+    padding-left: 15px !important;
+    /* text-overflow: hidden; */
+}
+.input input::placeholder{
+    color: blue
+}
+
+.btn:active{
+    transform: scale(0.9);
+}

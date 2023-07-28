@@ -1,0 +1,139 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik","Open Sans",sans-serif;
+}
+.btn{
+  font-weight: 500;
+}
+.content-1{
+  z-index: 1000;
+  background: rgb(32,33,35);
+  color: white;
+  padding: 10px 0px !important;
+  height: 100vh;
+  position: absolute;
+  transition: transform 0.3s;
+}
+.content-2{
+  height: 100vh;
+}
+.searchBar{
+  position: relative;
+  border-bottom: 2px solid gainsboro;
+  padding: 10px;
+}
+.placeholder{
+    position: absolute;
+    top: 23px;
+    left: 20px;
+}
+.searchIcon{
+  position: absolute;
+  top: 30%;
+  left: 15px;
+}
+
+input{
+  border: 1px solid white !important;
+  border-radius: 5px !important;
+  padding-left: 30px !important;
+  box-sizing: border-box !important;
+  margin: 0px !important;
+  /* width: 80% !important; */
+}
+.navBar{
+  height: 50px;
+  width: 80%;
+  margin: 0px auto;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_logo{
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.header_logo::first-letter{
+  color:aquamarine;
+  letter-spacing: 5px;
+  font-size: 35px;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin: 0px;
+  background-color: rgb(32,33,35);
+}
+.header_links{
+  display: flex;
+  gap: 10px;
+}
+.header_links li{
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 5px;
+  padding: 2px 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+  /* font-family: "Rubik","Open Sans",sans-serif;; */
+}
+.header_link li:active{
+  transform: scale(0.9);
+}
+.slider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+.menu{
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  color: lightgray;
+  caret-color: transparent;
+  cursor: pointer;
+}
+.games{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 0 7px 0px 5px;
+}
+.game {
+  /* width: 100%; */
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  caret-color: transparent;
+  transition: all .2s ease;
+  font-size: 15px;
+  /* white-space: wrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px 10px;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+.game:hover{
+  background-color: rgba(52,53,65,1);;
+}
+
+.game:active{
+  transform: scale(0.98);
+}
+
+
+

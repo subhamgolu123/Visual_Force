@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.grid-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.zoomIn{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    z-index: 10;
+    padding: 5px;
+    border: 1px solid black;
+    /* border-radius: 10px; */
+}
+.enlarger{
+    position: absolute;
+    transform: translate(-180px, 0px);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: (0.5);
+    color: white;
+    background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZmlsbC1vcGFjaXR5PSIuMDUiIGZpbGw9IiNGRkYiIGQ9Ik0wIDBoMnYySDB6Ii8+PHBhdGggZD0iTTAgMGgxdjFIMHoiIGZpbGw9IiM4REFDREEiLz48L2c+PC9zdmc+) repeat;}
+.show{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}

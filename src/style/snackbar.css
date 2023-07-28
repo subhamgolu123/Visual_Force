@@ -1,0 +1,57 @@
+.snackBar{
+    position:fixed;
+    top: 3%;
+    right: 1%;
+    width: 300px;
+    /* height: 60px; */
+    padding: 10px;
+    background-color: gray;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    z-index: 10;
+    box-shadow: -2px -1px 57px -8px rgba(20,19,20,1);
+}
+.symbol p{
+    font-size: 25px;
+}
+.snackBar .message{
+    text-align: start;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+}
+.message:hover {
+    overflow: visible;
+    white-space: normal;
+    z-index: 1;
+}
+.snackBar .symbol{
+    width: 20%;
+}
+#show{
+    visibility: visible;
+    animation: slideIn 0.25s ease-out, fadeOut .25s ease-out, 2.5s;
+    /* animation: fadeIn 0.5s, fadeOut 0.5s, 2.5s; */
+}
+#hide{
+    visibility: hidden;
+}
+
+@keyframes slideIn{
+    from{
+        right: -100px;
+        transform: translateX(-100);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

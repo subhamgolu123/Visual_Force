@@ -1,0 +1,109 @@
+.micromouse{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+.mvMca{
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gridBox{
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:  center;
+    justify-content: center;
+    background-color: rgb(68, 70, 84);
+    padding: 10px;
+}
+.inputBox{
+    flex: 1;
+    background-color: rgb(68, 70, 84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputMenu{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(32,33,35);
+    justify-content: space-between;
+}
+.inputheader{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.inputBox p{
+    text-align: center;
+    /* line-height: 100px; */
+}
+.userinput{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    border-top: 2px solid lightgray;
+}
+.cordInput{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.cordInput div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cordInput input{
+    margin: 0px !important;
+    width: 30% !important;
+    color:white !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0px 10px !important;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* flex-direction: column; */
+}
+.buttons div{    
+    flex-basis:25%;
+    flex-grow: 1 1 auto;
+    transition: all .3s ease;
+    text-overflow: hidden;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cordInput div{
+    max-width: 25%;
+    transition: all .3s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.buttons div:active, .cordInput div:active{
+    transform: scale(0.95);
+}
